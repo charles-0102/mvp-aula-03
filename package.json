@@ -1,0 +1,14 @@
+{
+  "name": "central-de-demandas",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Protótipo local da Central de Demandas, com solicitante e gestor.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check server/index.js && node --check server/store.js && node --check public/app.js"
+  }
+}
